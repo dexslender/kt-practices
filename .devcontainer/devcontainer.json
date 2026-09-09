@@ -16,18 +16,25 @@
 	//
 	// Browse more options at: https://hub.docker.com/r/microsoft/devcontainers
 	// or build your own using the Dockerfile option below.
-	"image": "mcr.microsoft.com/devcontainers/universal:4.0.1-noble"
+	"image": "mcr.microsoft.com/devcontainers/universal:4.0.1-noble",
 	// Use "build":
 	// instead of the image to use a Dockerfile to build an image.
 	// "build": {
-    //     "context": ".",
-    //     "dockerfile": "Dockerfile"
-    // }
+	//     "context": ".",
+	//     "dockerfile": "Dockerfile"
+	// }
 	// Features add additional features to your environment. See https://containers.dev/features
 	// Beware: features are not supported on all platforms and may have unintended side-effects.
 	// "features": {
-    //   "ghcr.io/devcontainers/features/docker-in-docker": {
-    //     "moby": false
-    //   }
-    // }
+	//   "ghcr.io/devcontainers/features/docker-in-docker": {
+	//     "moby": false
+	//   }
+	// }
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"jetbrains.kotlin-server"
+			]
+		}
+	}
 }
